@@ -1,0 +1,10 @@
+org_obj = open ("money.txt","w")
+copy_obj = open ("data.txt","w") 
+org_obj.write("Vishal")
+org_obj.close()
+
+org_obj = open ("money.txt","r+")
+text = org_obj.read()
+copy_obj.write(text)
+org_obj.close()
+copy_obj.close()
