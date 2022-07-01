@@ -26,5 +26,11 @@ class items(details):
     def display_data(self):
         details.display_d(self)
 
-i1 = items("Item",2,10,100)
+name = input("Enter item name : ")
+no = int(input("Enter the no of item : "))
+stock = int(input("Enter the stock of item :"))
+price = float(input("Enter the price of item : "))
+
+
+i1 = items(name,no,stock,price)
 i1.display_data()
